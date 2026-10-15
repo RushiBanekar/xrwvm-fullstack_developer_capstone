@@ -130,3 +130,4 @@ dmypy.json
 server/djangoenv/
 server/db.sqlite3
 __pycache__/
+server/cookies.txt

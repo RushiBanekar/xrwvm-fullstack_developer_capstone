@@ -4,12 +4,12 @@ from django.contrib.auth.models import User
 import logging
 import json
 from django.views.decorators.csrf import csrf_exempt
+from .populate import initiate
+from .models import CarMake, CarModel
 
-# Get an instance of a logger
 logger = logging.getLogger(__name__)
 
 
-# Login view
 @csrf_exempt
 def login_user(request):
     data = json.loads(request.body)
@@ -23,14 +23,12 @@ def login_user(request):
     return JsonResponse(data)
 
 
-# Logout view
 def logout_request(request):
     logout(request)
     data = {"userName": ""}
     return JsonResponse(data)
 
 
-# Registration view
 @csrf_exempt
 def registration(request):
     data = json.loads(request.body)
@@ -60,3 +58,17 @@ def registration(request):
     else:
         data = {"userName": username, "error": "Already Registered"}
         return JsonResponse(data)
+
+
+def get_cars(request):
+    count = CarMake.objects.filter().count()
+    if count == 0:
+        initiate()
+    car_models = CarModel.objects.select_related('car_make')
+    cars = []
+    for car_model in car_models:
+        cars.append({
+            "CarModel": car_model.name,
+            "CarMake": car_model.car_make.name
+        })
+    return JsonResponse({"CarModels": cars})
