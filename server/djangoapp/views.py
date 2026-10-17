@@ -6,6 +6,7 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 from .populate import initiate
 from .models import CarMake, CarModel
+from .restapis import get_request, analyze_review_sentiments, post_review
 
 logger = logging.getLogger(__name__)
 
@@ -72,3 +73,50 @@ def get_cars(request):
             "CarMake": car_model.car_make.name
         })
     return JsonResponse({"CarModels": cars})
+
+
+def get_dealerships(request, state="All"):
+    if state == "All":
+        endpoint = "/fetchDealers"
+    else:
+        endpoint = "/fetchDealers/" + state
+    dealerships = get_request(endpoint)
+    return JsonResponse({"status": 200, "dealers": dealerships})
+
+
+def get_dealer_reviews(request, dealer_id):
+    if dealer_id:
+        endpoint = "/fetchReviews/dealer/" + str(dealer_id)
+        reviews = get_request(endpoint)
+        for review_detail in reviews:
+            response = analyze_review_sentiments(review_detail['review'])
+            if response and 'sentiment' in response:
+                review_detail['sentiment'] = response['sentiment']
+            else:
+                review_detail['sentiment'] = 'neutral'
+        return JsonResponse({"status": 200, "reviews": reviews})
+    else:
+        return JsonResponse({"status": 400, "message": "Bad Request"})
+
+
+def get_dealer_details(request, dealer_id):
+    if dealer_id:
+        endpoint = "/fetchDealer/" + str(dealer_id)
+        dealership = get_request(endpoint)
+        return JsonResponse({"status": 200, "dealer": dealership})
+    else:
+        return JsonResponse({"status": 400, "message": "Bad Request"})
+
+
+@csrf_exempt
+def add_review(request):
+    if not request.user.is_anonymous:
+        data = json.loads(request.body)
+        try:
+            post_review(data)
+            return JsonResponse({"status": 200})
+        except Exception:
+            return JsonResponse(
+                {"status": 401, "message": "Error in posting review"})
+    else:
+        return JsonResponse({"status": 403, "message": "Unauthorized"})
