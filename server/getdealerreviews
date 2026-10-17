@@ -162,7 +162,7 @@
     </tr>
     <tr>
       <th scope="row">Server time:</th>
-      <td>Sat, 17 Oct 2026 13:53:18 +0000</td>
+      <td>Sat, 17 Oct 2026 14:04:48 +0000</td>
     </tr>
   </table>
 </header>
@@ -186,43 +186,43 @@
           
 
           
-            <div class="context" id="c125250459508096">
+            <div class="context" id="c125250459245952">
               
-                <ol start="48" class="pre-context" id="pre125250459508096">
+                <ol start="48" class="pre-context" id="pre125250459245952">
                 
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre></pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre>        return inner</pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre>        return inner</pre></li>
                 
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre>    else:</pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre>    else:</pre></li>
                 
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre></pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre>        @wraps(get_response)</pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre>        @wraps(get_response)</pre></li>
                 
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre>        def inner(request):</pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre>        def inner(request):</pre></li>
                 
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre>            try:</pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre>            try:</pre></li>
                 
                 </ol>
               
               <ol start="55" class="context-line">
-                <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre>                response = get_response(request)</pre> <span>…</span></li>
+                <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre>                response = get_response(request)</pre> <span>…</span></li>
               </ol>
               
-                <ol start='56' class="post-context" id="post125250459508096">
+                <ol start='56' class="post-context" id="post125250459245952">
                   
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre>            except Exception as exc:</pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre>            except Exception as exc:</pre></li>
                   
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre>                response = response_for_exception(request, exc)</pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre>                response = response_for_exception(request, exc)</pre></li>
                   
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre>            return response</pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre>            return response</pre></li>
                   
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre></pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre>        return inner</pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre>        return inner</pre></li>
                   
-                  <li onclick="toggle('pre125250459508096', 'post125250459508096')"><pre></pre></li>
+                  <li onclick="toggle('pre125250459245952', 'post125250459245952')"><pre></pre></li>
                   
               </ol>
               
@@ -234,7 +234,7 @@
               <details>
                 <summary class="commands">Local vars</summary>
             
-            <table class="vars" id="v125250459508096">
+            <table class="vars" id="v125250459245952">
               <thead>
                 <tr>
                   <th scope="col">Variable</th>
@@ -271,43 +271,43 @@
           
 
           
-            <div class="context" id="c125250459509376">
+            <div class="context" id="c125250459250368">
               
-                <ol start="190" class="pre-context" id="pre125250459509376">
+                <ol start="190" class="pre-context" id="pre125250459250368">
                 
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre></pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>        if response is None:</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>        if response is None:</pre></li>
                 
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
                 
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>            # If it is an asynchronous view, run it in a subthread.</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>            # If it is an asynchronous view, run it in a subthread.</pre></li>
                 
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>            if iscoroutinefunction(wrapped_callback):</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>            if iscoroutinefunction(wrapped_callback):</pre></li>
                 
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>                wrapped_callback = async_to_sync(wrapped_callback)</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>                wrapped_callback = async_to_sync(wrapped_callback)</pre></li>
                 
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>            try:</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>            try:</pre></li>
                 
                 </ol>
               
               <ol start="197" class="context-line">
-                <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre> <span>…</span></li>
+                <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre> <span>…</span></li>
               </ol>
               
-                <ol start='198' class="post-context" id="post125250459509376">
+                <ol start='198' class="post-context" id="post125250459250368">
                   
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>            except Exception as e:</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>            except Exception as e:</pre></li>
                   
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
                   
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>                if response is None:</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>                if response is None:</pre></li>
                   
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>                    raise</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>                    raise</pre></li>
                   
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre></pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre125250459509376', 'post125250459509376')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  <li onclick="toggle('pre125250459250368', 'post125250459250368')"><pre>        # Complain if the view returned None (a common error).</pre></li>
                   
               </ol>
               
@@ -319,7 +319,7 @@
               <details>
                 <summary class="commands">Local vars</summary>
             
-            <table class="vars" id="v125250459509376">
+            <table class="vars" id="v125250459250368">
               <thead>
                 <tr>
                   <th scope="col">Variable</th>
@@ -376,43 +376,43 @@
           
 
           
-            <div class="context" id="c125250459511168">
+            <div class="context" id="c125250459250688">
               
-                <ol start="84" class="pre-context" id="pre125250459511168">
+                <ol start="84" class="pre-context" id="pre125250459250688">
                 
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>    return JsonResponse({&quot;status&quot;: 200, &quot;dealers&quot;: dealerships})</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>    return JsonResponse({&quot;status&quot;: 200, &quot;dealers&quot;: dealerships})</pre></li>
                 
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre></pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre></pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>def get_dealer_reviews(request, dealer_id):</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>def get_dealer_reviews(request, dealer_id):</pre></li>
                 
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>    if dealer_id:</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>    if dealer_id:</pre></li>
                 
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>        endpoint = &quot;/fetchReviews/dealer/&quot; + str(dealer_id)</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>        endpoint = &quot;/fetchReviews/dealer/&quot; + str(dealer_id)</pre></li>
                 
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>        reviews = get_request(endpoint)</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>        reviews = get_request(endpoint)</pre></li>
                 
                 </ol>
               
               <ol start="91" class="context-line">
-                <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>        for review_detail in reviews:</pre> <span>…</span></li>
+                <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>        for review_detail in reviews:</pre> <span>…</span></li>
               </ol>
               
-                <ol start='92' class="post-context" id="post125250459511168">
+                <ol start='92' class="post-context" id="post125250459250688">
                   
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>            response = analyze_review_sentiments(review_detail[&#x27;review&#x27;])</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>            response = analyze_review_sentiments(review_detail[&#x27;review&#x27;])</pre></li>
                   
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>            if response and &#x27;sentiment&#x27; in response:</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>            if response and &#x27;sentiment&#x27; in response:</pre></li>
                   
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>                review_detail[&#x27;sentiment&#x27;] = response[&#x27;sentiment&#x27;]</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>                review_detail[&#x27;sentiment&#x27;] = response[&#x27;sentiment&#x27;]</pre></li>
                   
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>            else:</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>            else:</pre></li>
                   
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>                review_detail[&#x27;sentiment&#x27;] = &#x27;neutral&#x27;</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>                review_detail[&#x27;sentiment&#x27;] = &#x27;neutral&#x27;</pre></li>
                   
-                  <li onclick="toggle('pre125250459511168', 'post125250459511168')"><pre>        return JsonResponse({&quot;status&quot;: 200, &quot;reviews&quot;: reviews})</pre></li>
+                  <li onclick="toggle('pre125250459250688', 'post125250459250688')"><pre>        return JsonResponse({&quot;status&quot;: 200, &quot;reviews&quot;: reviews})</pre></li>
                   
               </ol>
               
@@ -424,7 +424,7 @@
               <details>
                 <summary class="commands">Local vars</summary>
             
-            <table class="vars" id="v125250459511168">
+            <table class="vars" id="v125250459250688">
               <thead>
                 <tr>
                   <th scope="col">Variable</th>
@@ -1221,7 +1221,7 @@ Exception Value: &#x27;NoneType&#x27; object is not iterable
       
         <tr>
           <td>wsgi.input</td>
-          <td class="code"><pre>&lt;django.core.handlers.wsgi.LimitedStream object at 0x71ea2523e1d0&gt;</pre></td>
+          <td class="code"><pre>&lt;django.core.handlers.wsgi.LimitedStream object at 0x71ea251e0100&gt;</pre></td>
         </tr>
       
         <tr>
