@@ -131,3 +131,4 @@ server/djangoenv/
 server/db.sqlite3
 __pycache__/
 server/cookies.txt
+server/frontend/node_modules
