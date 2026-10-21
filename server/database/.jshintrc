@@ -1,1 +1,1 @@
-{ "esversion": 8, "node": true }
+{ "esversion": 8, "node": true, "sub": true, "asi": true }
