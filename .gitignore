@@ -130,3 +130,5 @@ dmypy.json
 djangoenv/
 node_modules/
 cookies.txt
+djangoenv/
+cookies.txt

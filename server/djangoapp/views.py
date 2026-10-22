@@ -43,3 +43,26 @@ def registration(request):
         last_name=last_name, password=password, email=email)
     login(request, user)
     return JsonResponse({"userName": username, "status": "Authenticated"})
+
+
+def get_dealerships(request, state="All"):
+    if state == "All":
+        endpoint = "/fetchDealers"
+    else:
+        endpoint = "/fetchDealers/" + state
+    dealerships = get_request(endpoint)
+    return JsonResponse({"status": 200, "dealers": dealerships})
+
+
+def get_dealer_details(request, dealer_id):
+    if dealer_id:
+        dealership = get_request("/fetchDealer/" + str(dealer_id))
+        return JsonResponse({"status": 200, "dealer": dealership})
+    return JsonResponse({"status": 400, "message": "Bad Request"})
+
+
+def get_dealer_reviews(request, dealer_id):
+    if dealer_id:
+        reviews = get_request("/fetchReviews/dealer/" + str(dealer_id))
+        return JsonResponse({"status": 200, "reviews": reviews})
+    return JsonResponse({"status": 400, "message": "Bad Request"})
