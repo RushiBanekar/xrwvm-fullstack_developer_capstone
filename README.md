@@ -1,4 +1,6 @@
 # Dealerships Full Stack Capstone Project
 
-Repository: xrwvm-fullstack_developer_capstone
-Project: Car Dealerships Review Application (Django + React + Node.js + MongoDB)
+Repository name: xrwvm-fullstack_developer_capstone
+Project name: fullstack_developer_capstone
+
+A Car Dealerships Review Application built with Django, React, Node.js and MongoDB.
