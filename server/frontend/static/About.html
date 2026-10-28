@@ -1,69 +1,58 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <title>About Us</title>
   <link rel="stylesheet" href="/static/bootstrap.min.css">
   <link rel="stylesheet" href="/static/style.css">
 </head>
-<div>
+<body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" style="font-size: larger;" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" style="font-size: larger;" aria-current="page" href="/about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header" style="padding: 1em; text-align: center;">
-        <h3>About Our Team</h3>
-        <p>Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.</p>
-        <p>We are a small team of developers passionate about building a transparent, easy-to-use platform for car dealership reviews.</p>
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%;">
+    <div class="banner" style="padding: 1em; text-align: center;">
+      <h2>About Us</h2>
+      <p>Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.</p>
+    </div>
+    <div style="display: flex; flex-direction: row; margin: auto;">
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person.png" alt="Rushi Banekar">
         <div class="card-body">
           <p class="title">Rushi Banekar</p>
           <p>Full Stack Developer</p>
-          <p class="card-text">Designed and built the Django backend, Express/MongoDB services, and React frontend for this project.</p>
-          <p>rushi.banekar24@vit.edu</p>
+          <p class="card-text">Hi I am Rushi. I built the Django backend, the Express/MongoDB services and the React frontend.</p>
+          <p>rushi.banekar24@gmail.com</p>
         </div>
       </div>
-
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person2.png" alt="Asha Mehta">
         <div class="card-body">
           <p class="title">Asha Mehta</p>
           <p>UI/UX Designer</p>
-          <p class="card-text">Designed the user interface and experience for the dealer review pages, focusing on clarity and ease of use.</p>
-          <p>asha.mehta@example.com</p>
+          <p class="card-text">Hi I am Asha. I designed the interface for the dealer review pages.</p>
+          <p>asha.mehta@gmail.com</p>
         </div>
       </div>
-
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person3.png" alt="Karan Shah">
         <div class="card-body">
           <p class="title">Karan Shah</p>
           <p>DevOps Engineer</p>
-          <p class="card-text">Handled CI/CD pipeline setup, containerization, and deployment to Kubernetes and IBM Cloud Code Engine.</p>
-          <p>karan.shah@example.com</p>
+          <p class="card-text">Hi I am Karan. I handle CI/CD, containerization and deployment.</p>
+          <p>karan.shah@gmail.com</p>
         </div>
       </div>
     </div>
-    </div>
-</div>
-
+  </div>
+</body>
 </html>
